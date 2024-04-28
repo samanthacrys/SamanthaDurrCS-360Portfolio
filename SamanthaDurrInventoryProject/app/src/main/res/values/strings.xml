@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SamanthaDurrInventoryProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ad_sms_msg" />
+    <string name="ad_sms_title" />
+    <string name="ad_delete_title" />
+    <string name="ad_delete_msg" />
+    <string name="ad_delete_dialog_yes_button" />
+    <string name="ad_delete_dialog_no_button" />
+    <string name="logged_user" />
+</resources>

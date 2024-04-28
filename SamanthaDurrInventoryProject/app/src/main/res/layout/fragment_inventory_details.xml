@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventoryItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryDetails">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="614dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LocationTitle"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="36dp"
+        android:text="Location:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/AmountAvailable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/LocationInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="550dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LocationTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AmountAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="60dp"
+        android:text="Amount Available:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveChanges"
+        app:layout_constraintEnd_toStartOf="@+id/AmountEditable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationTitle" />
+
+    <EditText
+        android:id="@+id/AmountEditable"
+        android:layout_width="69dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="467dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AmountAvailable"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="359dp"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AmountAvailable" />
+
+    <Button
+        android:id="@+id/RemoveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="285dp"
+        android:text="Remove Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveChanges" />
+</androidx.constraintlayout.widget.ConstraintLayout>
